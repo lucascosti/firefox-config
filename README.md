@@ -1,5 +1,4 @@
 # firefox-config
-A place to store what I need to change for Firefox on Windows.
 
 In about:config, change:
 * `layout.css.devPixelsPerPx` to `1` ; This makes the chrome and content not respect the DPI setting of the OS. Prior to Firefox 22, the OS DPI setting would affect the chrome only (good), but not the web content. After FF22 it affected both (bad).
