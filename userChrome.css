@@ -1,0 +1,91 @@
+/* Original:
+Firefox Custom Font Size by aireca v1.01 
+http://forums.mozillazine.org/viewtopic.php?p=12890981&sid=c1ff584176b806003e646227a4fc9a0f#p12890981
+
+This goes in your firefox profile in the `chrome` directory.
+*/
+
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Menus font */
+menu, menubar, menubutton, menulist, checkbox, .splitmenu-menuitem {
+font-size: 11pt !important;}
+
+menuitem {font-size: 11pt !important;}
+
+/* Awesombar for post-Firefox48 changes */
+#PopupAutoCompleteRichResult .ac-separator, .ac-url, .ac-action {
+  font-size: 16px !important;
+}
+#PopupAutoCompleteRichResult .ac-title {
+  font-size: 16px !important;
+}
+
+/* Window font */
+window, page, wizard, prefwindow {
+font-size:  11pt !important; }
+
+/* Dialog font */
+dialog {
+font-size: 11pt !important; }
+
+/* Tabs Toolbar font */
+#TabsToolbar{
+font-size: 11pt !important;}
+
+/* Tab text font */
+.tab-text {
+font-size: 11pt !important; }
+
+/* Textbox font */
+textbox {
+font-size: 11pt !important; }
+
+/* Toolbar font */
+toolbar {
+font-size: 11pt !important; }
+
+/* Address bar font */
+#urlbar {
+font-size: 11pt !important; }
+
+/* Personal Titlebar Title font */
+#personal-titlebar{
+font-size: 11pt !important;}
+
+/* Status bar font */
+#status-bar {
+font-size: 11pt !important; }
+
+/* Status4evar Status font */
+#status4evar-status-widget {
+font-size: 11pt !important; }
+
+/* Sidebars Font */
+#sidebar-box *,
+#bookmarksPanel *, #bookmarks-view *,
+#history-panel *, #historyTree, sidebarheader {
+font-size: 11pt !important; }
+
+/* Trees font */
+tree, treechildren {
+font-size: 11pt !important; }
+
+/* Buttons font */
+button {
+font-size: 11pt !important; }
+
+/* Preferences font */
+#BrowserPreferences {
+font-size: 11pt !important; }
+
+
+/* About Addons fonts */
+.name-container {
+font-size:  16pt !important; }
+#detail-name-container {
+font-size:  20pt !important; }
+.detail-view-container {
+font-size:  14pt !important; }
+.category {
+font-size:  11.5pt !important; }
