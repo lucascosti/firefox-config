@@ -1,0 +1,28 @@
+---
+- name: Cinammon DE hacks for Lucas
+  hosts: localhost
+  # Become root
+  become: true
+  vars_prompt:
+  - name: "ansible_become_pass"
+    prompt: "Enter the sudo password"
+    private: yes
+
+  tasks:
+
+    # The default Numix 'find' icon is a weird 'crosshair' thing. This copies the default Adwaita find icons to the Numix icon theme.
+    - name: Change Numix 'find' icon to magnifying glass
+      copy:
+        src: /usr/share/icons/Adwaita/scalable/actions/{{item}}
+        dest: /usr/share/icons/Numix/scalable/actions/
+      with_items:
+        - edit-find-symbolic.svg
+        - edit-find-replace-symbolic.svg
+        - find-location-symbolic.svg
+
+    # The default window-list item width in Cinammon is too narrow for my liking. This edits the window-list JS to set the width to be wider.
+    - name: Change window-list default width to be wider
+      replace:
+        path: /usr/share/cinnamon/applets/window-list@cinnamon.org/applet.js
+        regexp: '^ *alloc\.natural_size = 150 \* global\.ui_scale;'
+        replace: "//***Lucas**** Replaced:alloc.natural_size = 150 * global.ui_scale;\n                alloc.natural_size = 400 * global.ui_scale;"
