@@ -1,92 +1,84 @@
-/* Original:
-Firefox Custom Font Size by aireca v1.01
-http://forums.mozillazine.org/viewtopic.php?p=12890981&sid=c1ff584176b806003e646227a4fc9a0f#p12890981
+/* Lucas: Firefox 57 Tweaks on 4k monitor @ 200% scale: */
 
-This goes in your firefox profile in the `chrome` directory.
-*/
+/* Make address bar just a tad smaller */
+/* Address bar font */
 
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 /* Menus font */
 menu, menubar, menubutton, menulist, checkbox, .splitmenu-menuitem {
-font-size: 11pt !important;}
+font-size: 95% !important;}
 
-menuitem {font-size: 11pt !important;}
+menuitem {font-size: 95% !important;}
 
 /* Awesombar for post-Firefox48 changes */
 #PopupAutoCompleteRichResult .ac-separator, .ac-url, .ac-action {
-  font-size: 16px !important;
+  font-size: 95% !important;
 }
 #PopupAutoCompleteRichResult .ac-title {
-  font-size: 16px !important;
+  font-size: 95% !important;
 }
-
-/* Window font */
-window, page, wizard, prefwindow {
-font-size:  11pt !important; }
-
-/* Dialog font */
-dialog {
-font-size: 11pt !important; }
-
-/* Tabs Toolbar font */
-#TabsToolbar{
-font-size: 11pt !important;}
-
-/* Tab text font */
-.tab-text {
-font-size: 11pt !important; }
-
-/* Textbox font */
-textbox {
-font-size: 11pt !important; }
-
-/* Toolbar font */
-toolbar {
-font-size: 11pt !important; }
 
 /* Address bar font */
 #urlbar {
-font-size: 11pt !important; }
+font-size: 95% !important; }
+
+/* For Firefox 68? Address bar suggestions */
+#urlbar-results {
+  font-size: 80% !important;
+}
+
+
+/* Window font */
+window, page, wizard, prefwindow {
+font-size:  95% !important; }
+
+/* Dialog font */
+dialog {
+font-size: 95% !important; }
+
+/* Tabs Toolbar font */
+#TabsToolbar{
+font-size: 95% !important;}
+
+/* Tab text font */
+.tab-text {
+font-size: 95% !important; }
+
+/* Textbox font */
+textbox {
+font-size: 95% !important; }
+
+/* Toolbar font */
+toolbar {
+font-size: 95% !important; }
 
 /* Personal Titlebar Title font */
 #personal-titlebar{
-font-size: 11pt !important;}
+font-size: 95% !important;}
 
 /* Status bar font */
 #status-bar {
-font-size: 11pt !important; }
+font-size: 95% !important; }
 
 /* Sidebars Font */
 #sidebar-box *,
 #bookmarksPanel *, #bookmarks-view *,
 #history-panel *, #historyTree, sidebarheader {
-font-size: 11pt !important; }
+font-size: 95% !important; }
 
 /* Trees font */
 tree, treechildren {
-font-size: 11pt !important; }
+font-size: 95% !important; }
 
 /* Buttons font */
 button {
-font-size: 11pt !important; }
+font-size: 95% !important; }
 
 /* Preferences font */
 #BrowserPreferences {
-font-size: 11pt !important; }
+font-size: 95% !important; }
 
-
-/* About Addons fonts */
-.name-container {
-font-size:  16pt !important; }
-#detail-name-container {
-font-size:  20pt !important; }
-.detail-view-container {
-font-size:  14pt !important; }
-.category {
-font-size:  11.5pt !important; }
-
-/* Lucas: Firefox 57 Tweaks: */
 /* Make tab padding smaller to fit more in. */
 .tab-content[pinned] {padding-left: 9px !important; padding-right: 9px !important;}
 .tab-content:not([pinned]) {padding-left: 5px !important; padding-right: 5px !important;}
