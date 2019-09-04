@@ -28,6 +28,11 @@ font-size: 95% !important; }
   font-size: 80% !important;
 }
 
+/* searchbar font: for Firefox 69 */
+#searchbar {
+  font-size: 100% !important;
+}
+
 
 /* Window font */
 window, page, wizard, prefwindow {
