@@ -32,8 +32,9 @@ font-size: 95% !important; }
 #searchbar {
   font-size: 100% !important;
 }
-
-
+.autocomplete-richlistitem .ac-title {
+  font-size: 95% !important;
+}
 
 /* Window font */
 window, page, wizard, prefwindow {
