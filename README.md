@@ -11,6 +11,7 @@ Automates some tasks that I do to my Fedora Cinnamon installation.
 This is some stuff that I need to change to Firefox on Windows.
 
 In about:config, change:
+
 * `layout.css.devPixelsPerPx` to `1` ; This makes the chrome and content not respect the DPI setting of the OS. Prior to Firefox 22, the OS DPI setting would affect the chrome only (good), but not the web content. After FF22 it affected both (bad).
 * `gfx.direct2d.disabled` to `true` ; This stops fonts becoming fuzzy.
 
